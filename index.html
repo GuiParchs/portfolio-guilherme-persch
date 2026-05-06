@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Guilherme">
+    <title>Portfólio</title>
+
+    <link rel="stylesheet" href="css/style.css"> <!-- CSS -->
+    <script src="js/script.js" defer></script> <!-- JS -->
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seções -->
+
+    <!-- Seção 1 -->
+    <section id="sobre-mim">
+        <h2>Sobre mim</h2>
+        <p>
+            Olá, meu nome é Guilherme, e bem-vindo ao meu portfólio. Sou um estudante de Ciência da Computação,
+            com interesse em programação e eletrônica.
+        </p>
+        <p>
+            Tenho experiência com as linguagens Python, Lua, JavaScript, e atualmente estou estudando aplicações web com o framework Django.
+        </p>
+        <p>
+            Estou em busca de oportunidades na área de TI para adquirir experiência prática e aprimorar minhas habilidades.
+        </p>
+    </section>
+
+    <!-- Seção 2 -->
+    <section id="formacao">
+        <h2>Formação</h2>
+        <p>Estou cursando bacharelado em Ciência da Computação na UNINTER.</p>
+
+        <br>
+
+        <p><strong>Cursos: </strong>Introdução à Cibersegurança (Cisco)</p>
+        <p><strong>Idiomas: </strong>Inglês intermediário</p>
+    </section>
+
+    <!-- Seção 3 -->
+    <section id="projetos">
+        <h2>Portfólio</h2>
+        <p>A seguir, alguns de meus projetos:</p>
+
+        <!-- Projetos -->
+
+        <!-- Projeto 1 -->
+        <article class="round-border">
+            <h3>Site de Buscas</h3>
+            <p>
+                Um site de buscas utilizando a API do Google Search.
+                Inclui uma página para buscas simples, busca de imagens, e busca avançada.
+            </p>
+
+            <div class="img-container">
+                <img src="assets/images/projeto1-1.png" alt="Interface de uma página de buscas">
+            </div>
+            
+
+            <strong>Tecnologias utilizadas:</strong>
+            <ul>
+                <li>HTML e CSS</li>
+                <li>Biblioteca Bootstrap</li>
+            </ul>
+
+            <div class="footer">
+                <span>
+                    <strong>Endereço: </strong>
+                    <a
+                        class="link-externo"
+                        href="https://guiparchs.github.io/google-search-page/"
+                        target="_blank"
+                        aria-label="Acessar site">
+                    </a>
+                </span>
+            </div>
+        </article>
+
+        <!-- Projeto 2 -->
+        <article class="round-border">
+            <h3>Simulação de E-mail</h3>
+            <p>
+                Uma aplicação web que simula um serviço de e-mails interno.
+                Utiliza da metodologia SPA (Single Page Application) para atualizar
+                a caixa de entrada dinamicamente, sem recarregar a página.
+                Inclui sistema de criação de contas e interação com banco de dados.
+            </p>
+
+            <div class="img-container">
+                <img class="round-border" src="assets/images/projeto2-1.png" alt="Interface de uma caixa de entrada">
+            </div>
+
+            <div class="img-container">
+                <img class="round-border" src="assets/images/projeto2-2.png" alt="Interface de um serviço de email">
+            </div>
+
+            <strong>Tecnologias utilizadas:</strong>
+            <ul>
+                <li>Linguagem Python</li>
+                <li>Framework Django</li>
+                <li>HTML e CSS</li>
+                <li>Biblioteca Bootstrap</li>
+                <li>JavaScript</li>
+                <li>Interação com Banco de Dados (utilizando Django Models)</li>
+            </ul>
+
+            <div class="footer">
+                <span>
+                    <strong>Repositório: </strong>
+                    <a
+                        class="link-externo"
+                        href="https://github.com/GuiParchs/django-web-mail"
+                        target="_blank"
+                        aria-label="Acessar repositório">
+                    </a>
+                </span>
+                <p>(Atualmente, o deployment está indisponível, em virtude do fim do plano gratuito da Railway)</p>
+            </div>
+        </article>
+
+        <!-- Projeto 3 -->
+        <article class="round-border">
+            <h3>RetroPong2d</h3>
+            <p>
+                Uma recriação do jogo Pong, com o uso de shaders para simular um monitor CRT.
+                Inclui um modo PvP local e um modo Jogador contra Computador.
+            </p>
+
+            <div class="img-container">
+                <img src="assets/images/projeto3-1.png" alt="Menu de um jogo">
+            </div>
+
+            <div class="img-container">
+                <img src="assets/images/projeto3-2.png" alt="Jogo em execução">
+            </div>
+
+            <strong>Tecnologias utilizadas:</strong>
+            <ul>
+                <li>Linguagem Lua</li>
+                <li>Framework LÖVE2D</li>
+                <li>Biblioteca Moonshine</li>
+                <li>Biblioteca HUMP</li>
+            </ul>
+
+            <div class="footer">
+                <span>
+                    <strong>Repositório: </strong>
+                    <a
+                    class="link-externo"
+                    href="https://github.com/GuiParchs/RetroPong2d"
+                    target="_blank"
+                    aria-label="Acessar repositório">
+                </a>
+                </span>
+                <p>(Executável disponível para plataforma Windows)</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Seção 4 -->
+    <section id="contato">
+        <h2>Contato</h2>
+        
+        <!-- Formulário -->
+        <form id="msg-form">
+            <!-- Nome -->
+            <div class="field">
+                <label for="nome-input">Nome</label>
+                <input id="nome-input" type="text" placeholder="Seu nome...">
+            </div>
+
+            <!-- E-mail -->
+            <div class="field">
+                <label for="email-input">E-mail</label>
+                <input id="email-input" type="email" placeholder="exemplo@provedor.com">
+            </div>
+
+            <!-- Mensagem -->
+            <div class="field">
+                <label for="mensagem-input">Mensagem</label>
+                <textarea id="mensagem-input" rows="10" placeholder="Sua mensagem..."></textarea>
+            </div>
+
+            <!-- Botão de envio -->
+            <div class="btn">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Diálogo/modal -->
+    <dialog id="modal" class="round-border">
+        <h3>Sucesso!</h3>
+        <p>Sua mensagem foi enviada. Entrarei em contato em breve!</p>
+        <button id="modal-fechar">Fechar</button>
+    </dialog>
+</body>
+</html>

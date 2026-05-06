@@ -1,0 +1,168 @@
+/* Corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+/* Barra de navegação */
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    background-color: #333333;
+
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    min-height: 60px;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.12rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+/* Seções */
+section {
+    padding: 50px
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+/* Projetos (cards) */
+article {
+    margin: 30px 15px;
+    padding: 0 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.round-border {
+    border: 2px solid #333333;
+    border-radius: 20px;
+}
+
+.img-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    margin: 40px 0 40px 0;
+}
+
+.img-container img {
+    border-radius: 20px;
+    width: 75%;
+    object-fit: cover;
+}
+
+/* Rodapé do card */
+.footer {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.field {
+    max-width: 70%;
+    margin: 0 10px 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    padding: 10px 20px;
+}
+
+input, button, textarea {
+    border-radius: 5px;
+    border: 1px solid #333333;
+    font-family: inherit;
+}
+
+input, textarea {
+    padding: 10px;
+}
+
+button {
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+/* Diálogo */
+dialog {
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+/* Efeitos */
+
+/* Efeito de fundo do modal */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+/* Transição de cor dos botões e links */
+nav ul li a, button {
+    transition: background-color 0.3s ease;
+}
+
+/* Hover */
+nav ul li a:hover, button:hover {
+    transition: background-color 0.3s ease;
+    background-color: #111111;
+}
+
+
+/* Preencher display dos links com o href */
+.link-externo::before {
+    content: attr(href);
+}
